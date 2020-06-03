@@ -1,0 +1,54 @@
+input {
+    width: 500px;
+    border: 2px solid rgba(0, 194, 146, 0.692);
+    border-radius: 4px;;
+    padding: 8px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}    
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 520px;
+    height: 500px;
+    border: 2px solid gray;
+}
+
+.title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.icon {
+    height: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    
+}
+
+.formulario {
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    background: rgba(0, 194, 146, 0.692);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+}
+
+
