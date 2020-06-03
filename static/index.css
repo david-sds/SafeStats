@@ -1,0 +1,33 @@
+body{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo{
+
+    width: 110px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botoesul{
+    list-style-type: none;
+}
+
+.botoes{
+
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.botaomenu{
+
+    width: 100%;
+
+}
