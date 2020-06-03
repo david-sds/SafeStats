@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(200, 200, 200, 0.692);
+}
+
 input {
     width: 500px;
     border: 2px solid rgba(0, 194, 146, 0.692);
@@ -8,6 +12,7 @@ input {
 }    
 
 .content {
+    background-color: rgb(245, 245, 245);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -20,16 +25,16 @@ input {
 .title {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 50px;
-    margin-top: -10px;
+    margin-top: -20px;
     text-align: center;
 }
 
 .icon {
+    display: block;
     height: 70px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
-    
 }
 
 .formulario {
