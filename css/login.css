@@ -4,7 +4,8 @@ body {
 
 input {
     width: 500px;
-    border: 2px solid rgba(0, 194, 146, 0.692);
+    border: 2px solid #43b480;
+    outline: none;
     border-radius: 4px;;
     padding: 8px 20px;
     margin: 8px 0;
@@ -40,20 +41,22 @@ input {
 .formulario {
     margin-left: 10px;
     font-size: 12px;
-    text-decoration: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button {
-    background: rgba(0, 194, 146, 0.692);
+    background: #43b480;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     padding: 8px 12px;
     border-radius: 2px;
+    color: white;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-
 }
 
-
+.button:hover {
+    background-color: #369066;
+    color: white;
+  }
