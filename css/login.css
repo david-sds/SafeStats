@@ -1,5 +1,8 @@
 body {
-    background-color: rgba(200, 200, 200, 0.692);
+    background-color: green;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 input {
@@ -12,15 +15,20 @@ input {
     box-sizing: border-box;
 }    
 
+.fundo {
+    background-color: green;
+    opacity: 0.3;
+}
+
 .content {
-    background-color: rgb(245, 245, 245);
+    /*background-color: white;*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     width: 520px;
     height: 500px;
-    border: 2px solid gray;
+    /*border: 2px solid gray;*/
 }
 
 .title {
