@@ -4,20 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeStats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/index.css">
+    
 </head>
 
 <body>
 
-    <img class="logo" src="../img/safestats-logo.png" alt="safestatsicon">
-    <ul class="botoesul">
+    <div class="desktop">
+
+        <header class="header1"></header>
+        <aside class="aside1">
+
+            <button onclick="showPanel(0)" class="tabutton"><i class="fa fa-map-marker"></i>Mapa</button>
+            <button onclick="showPanel(1)" class="tabutton"><i class="fa fa-line-chart"></i>Estatísticas</button>
+            <button onclick="showPanel(2)" class="tabutton"><i class="fa fa-wrench"></i>Configurações</button>
+            <button onclick="showPanel(3)" class="tabutton"><i class="fa fa-search "></i>Pesquisas</button>
+            <button onclick="showPanel(4)" class="tabutton"><i class="fa fa-user"></i>Feedback</button>
+            <a href="login.html"><button class="tabutton"><i class="fa fa-sign-out "></i>Logout</button></a>
+
+
+        </aside>
+        <div class="tabs">
+            <div class="tab" id="mapa">
+
+            </div>
+            <div class="tab estatisticas"></div>
+            <div class="tab configurações"></div>
+            <div class="tab pesquisas"></div>
+            <div class="tab feedback"></div>
+            <div class="tab resumoinfo"></div>
+        </div>
+        
+        <script src="../js/index.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuSdZJOzqu8wbWJHAo_li4Wy4njAT11C0&callback=initMap"></script>
+
+    </div>
+
+    <div class="mobile">
+
+        <img class="logo" src="../img/safestats-logo.png" alt="safestatsicon">
+        <ul class="botoesul">
             <li><button class="botaomenu">MAPA</button></li> 
             <li><button class="botaomenu">ESTATÍSTICAS</button></li> 
             <li><button class="botaomenu">CONFIGURAÇÕES</button></li> 
             <li><button class="botaomenu">PESQUISAS</button></li> 
             <li><button class="botaomenu">FEEDBACK</button></li> 
-            <li><button class="botaomenu">RESUMO INFORMATIVO DOS HOSPITAIS</button></li>
+            <li><button class="botaomenu">LOGOUT</button></li>
         </ul>
-    <script src="../js/index.js"></script>
+    </div>
+   
 </body>
 </html>
