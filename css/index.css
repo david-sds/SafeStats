@@ -77,10 +77,41 @@ body{
     color: white;
     position: relative;
     font-size: 17px;
-    padding-left: 120px;
-
-
+    text-align: center;
 }
+
+
+.opbutton{
+    width: 25%;
+    height: 50px;
+    float: left;
+    background-color: rgb(78, 78, 78);
+    font-size: 15px;
+    color: white;
+    border: 2px solid rgb(43, 72, 73);
+    margin-left: 0px;
+    margin-right: 0px; 
+}
+
+.opbutton:hover {
+    background-color: rgb(65, 65, 65);
+    color: white;
+  }
+
+/* FLOAT??
+.botaoopicao {
+    padding: 0;
+    list-style-type: none;
+    text-align: justify;
+}
+
+.botaoopicao::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+*/
+
 
 .fa{
     font-size:30px;
@@ -136,6 +167,8 @@ body{
     background-color: #43b480;
     width: 100%;
 }
+
+
 
 li{
     margin-bottom: 4%;
