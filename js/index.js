@@ -1,5 +1,7 @@
 var botoes = document.querySelectorAll(".desktop .aside1 .tabutton");
 var tabs = document.querySelectorAll(".desktop .tab");
+var configButtons=document.querySelectorAll(".tab.configuracoes .configbuttons button")
+var configTabs=document.querySelectorAll(".tab.configuracoes .opconfigs")
 var map;
 
 function showPanel(panelIndex){
@@ -21,6 +23,23 @@ function showPanel(panelIndex){
 
 showPanel(0);
 
+function showOPanel(panelIndex) {
+  configButtons.forEach(function(node) {
+    node.style.backgroundColor="rgb(78, 78, 78)";
+    node.style.color="";
+  })
+  configTabs.forEach(function(node){
+
+    node.style.display="none";
+
+});
+
+configButtons[panelIndex].style.backgroundColor="rgb(100, 100, 100)";
+configTabs[panelIndex].style.display="block";
+
+}
+
+showOPanel(0);
 
 function initMap(){
     
