@@ -26,8 +26,7 @@ input {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 520px;
-    height: 500px;
+    height: 65%;
     /*border: 2px solid gray;*/
 }
 
@@ -40,10 +39,9 @@ input {
 
 .icon {
     display: block;
-    height: 70px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
 }
 
 .formulario {
