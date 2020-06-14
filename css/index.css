@@ -9,7 +9,7 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-.tabinfos{
+.tab.infos{
     color: whitesmoke;
     text-align: center;
     font-family: Verdana;
