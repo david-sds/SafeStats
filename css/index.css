@@ -131,6 +131,13 @@ body{
     color: white;
   }
 
+.configList {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    color: black;
+}
+
 
 .fa{
     font-size:30px;
@@ -156,7 +163,6 @@ body{
     height: 100vh;
 
 }
-
 
 .logo{
 
