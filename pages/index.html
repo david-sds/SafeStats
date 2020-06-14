@@ -20,12 +20,12 @@
         </header>
         <aside class="aside1">
 
-            <button onclick="showPanel(0)" class="tabutton"><i class="fa fa-map-marker"></i>Mapa</button>
-            <button onclick="showPanel(1)" class="tabutton"><i class="fa fa-line-chart"></i>Estatísticas</button>
-            <button onclick="showPanel(2)" class="tabutton"><i class="fa fa-wrench"></i>Configurações</button>
-            <button onclick="showPanel(3)" class="tabutton"><i class="fa fa-search "></i>Saiba Mais</button>
-            <button onclick="showPanel(4)" class="tabutton"><i class="fa fa-user"></i>Feedback</button>
-            <a href="login.html"><button class="tabutton"><i class="fa fa-sign-out "></i>Logout</button></a>
+            <button onclick="showPanel(0)" class="tabutton"><i class="fa fa-map-marker"></i>MAPA</button>
+            <button onclick="showPanel(1)" class="tabutton"><i class="fa fa-line-chart"></i>ESTATÍSTICAS</button>
+            <button onclick="showPanel(2)" class="tabutton"><i class="fa fa-wrench"></i>CONFIGURAÇÕES</button>
+            <button onclick="showPanel(3)" class="tabutton"><i class="fa fa-info "></i>MAIS INFORMAÇÕES</button>
+            <button onclick="showPanel(4)" class="tabutton"><i class="fa fa-user"></i>FEEDBACK</button>
+            <a href="login.html"><button class="tabutton"><i class="fa fa-sign-out "></i>LOGOUT</button></a>
 
 
         </aside>
@@ -37,15 +37,15 @@
             <div class="tab configuracoes">
 
                 <div class="configbuttons">
-                    <button onclick="showOPanel(0)" class="opbutton">Geral</button>
-                    <button onclick="showOPanel(1)" class="opbutton">Mapa</button>
-                    <button onclick="showOPanel(2)" class="opbutton">Avançado</button>
+                    <button onclick="showOPanel(0)" class="opbutton">GERAL</button>
+                    <button onclick="showOPanel(1)" class="opbutton">MAPA</button>
+                    <button onclick="showOPanel(2)" class="opbutton">AVANÇADO</button>
                 </div>
 
                 <div class="opconfigs">
                     <h3 class="configList">CONFIGURAÇÕES GERAIS</h3>
                     <ul class="configList">
-                        <li> Idioma <br>
+                        <li> IDIOMA <br>
                             <select data-placeholder="Choose a Language...">
                                 <option value="AF">Afrikaans</option>
                                 <option value="SQ">Albanian</option>
@@ -121,25 +121,25 @@
                                 <option value="XH">Xhosa</option>
                               </select>
                         </li>
-                        <li>Acessibilidade <br>
+                        <li>ACESSIBILIDADE <br>
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
-                        <li>Notificações <br>
+                        <li>NOTIFICAÇÕES <br>
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
-                        <li>Dicas <br>
+                        <li>DIACS<br>
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
-                        <li>Dark Mode <br>
+                        <li>DARK MODE <br>
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
@@ -151,7 +151,7 @@
                 <div class="opconfigs">
                     <h3 class="configList">CONFIGURAÇÕES DO MAPA</h3>
                     <ul class="configList">
-                        <li> Localização: <br>
+                        <li> LOCALIZAÇÃO: <br>
                             <select name="estado" id="estado">
                                 <option>Acre (AC)</option>
                                 <option>Alagoas (AL)</option>
@@ -184,12 +184,12 @@
                         </li>
                         <li>
                             <form action="/action_page.php">
-                                <label for="vol">Raio do Mapa: 1-100km² </label> <br>
+                                <label for="vol">RAIO DO MAPA: 1-100km² </label> <br>
                                 <input type="range" id="vol" name="vol" min="1" max="100">
                                 <input type="submit">
                               </form>
                         </li>
-                        <li>Histórico <br>
+                        <li>HISTÓRICO <br>
                             <button>Deletar Histórico</button>
                         </li>
                     </ul>
@@ -198,14 +198,41 @@
                 <div class="opconfigs">
                     <h3 class="configList">CONFIGURAÇÕES AVANÇADAS</h3>
                     <ul class="configList">
-                        <li>Contas</li>
-                        <li>Atualização</li>
-                        <li>Privacidade</li>
+                        <li>CONTAS</li>
+                        <li>ATUALIZAÇÃO</li>
+                        <li>PRIVACIDADE</li>
                     </ul>
                 </div>
 
             </div>
-            <div class="tab pesquisas"></div>
+
+            <div class="tabinfos">
+                <h1><img class="infoicon" src="../img/safestats-logo.png" alt="icon">SafeStats</h1>
+                <p class="pinfo1">
+                          ► O aplicativo SafeStats foi desenvolvido por um grupo de estudantes do primeiro período do
+                    curso Bacharelado em Sistemas de Informação na Pontíficia Católica do Paraná (PUCPR) no intuito de
+                    melhorar algumas graves deficiências do sistema de saúde brasileiro privado e público.
+                </p>
+                <p class="pinfo1">
+                          ► Nós levamos em consideração a atual situação do país, principalmente por conta dos tempos de
+                    pandemia e após pesquisas pudemos notar que o Brasil hoje enfrenta um grande problema em relação ao
+                    controle de leitos e principalmente em passar essas informações para a população, que, infelizmente
+                    é um problema de longa data.
+                </p>
+                <p class="pinfo1">
+                          ► Dessa maneira, desenvolvemos um aplicativo que com base nas informações de localização do
+                    dispositivo do usuário, entre à este a localização do hospital mais perto e com o menor tempo de
+                    espera, baseado no número de leitos disponíveis em cada hospital.
+                </p>
+                <p class="pinfo1">
+                          ► As informações dos hospitais são fornecidas em tempo real pelos hospitais e o nosso
+                    aplicativo processa e entrega essas informações ao usuário de uma maneira fácil de entender.
+                    Acreditamos que este app seja bastante útil para os usuários, tendo em vista que ele busca corrigir
+                    problemas existentes no atual sistema de saúde. Além disso, uma pesquisa foi efetuada e as respostas
+                    apontaram positivamente para a utilidade do aplicativo.
+                </p>
+            </div>
+            
             <div class="tab feedback"></div>
             <div class="tab resumoinfo"></div>
         </div>
@@ -222,7 +249,7 @@
             <li><button class="botaomenu">MAPA</button></li> 
             <li><button class="botaomenu">ESTATÍSTICAS</button></li> 
             <li><button class="botaomenu">CONFIGURAÇÕES</button></li> 
-            <li><button class="botaomenu">SAIBA MAIS</button></li> 
+            <li><button class="botaomenu">MAIS INFORMAÇÕES</button></li> 
             <li><button class="botaomenu">FEEDBACK</button></li> 
             <li><button class="botaomenu">LOGOUT</button></li>
         </ul>

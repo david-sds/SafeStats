@@ -9,6 +9,23 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+.tabinfos{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Verdana;
+    border-right: 100px;
+}
+
+.infoicon{
+        position: left;
+        width: 45px;
+        transform: translateX(-20%);
+}
+
+.pinfo1{
+    text-align: justify;
+}
+
 @media only screen and (min-width: 600px) {
 
 body{
