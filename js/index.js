@@ -18,7 +18,9 @@ function showPanel(panelIndex){
     tabs[panelIndex].style.display="block";
 
 }
+
 showPanel(0);
+
 
 function initMap(){
     

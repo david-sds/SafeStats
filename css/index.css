@@ -95,7 +95,8 @@ body{
 
 
 .opbutton{
-    width: 25%;
+    width: 33.333%;
+    height: 35px;
     float: left;
     background-color: rgb(78, 78, 78);
     font-size: 15px;
@@ -110,9 +111,6 @@ body{
     color: white;
   }
 
-.configbuttons {
-    width: 100%;
-}
 
 .fa{
     font-size:30px;
