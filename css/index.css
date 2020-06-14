@@ -45,6 +45,19 @@ body{
 
 }
 
+.icon {
+    position: absolute;
+    width: 45px;
+    margin-top: 2.5px;
+    margin-left: 5px;
+}
+
+.title {
+    margin-left: 58px;
+    margin-top: 6px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
 .aside1{
 
     height: 100%;
@@ -69,7 +82,6 @@ body{
 }
 
 .tabutton{
-
     width: 100%;
     height: 16.67%;
     background-color: rgb(78, 78, 78);
@@ -78,6 +90,7 @@ body{
     position: relative;
     font-size: 17px;
     text-align: center;
+    padding-left: 50px;
 }
 
 
