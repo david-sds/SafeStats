@@ -33,7 +33,7 @@ input {
 .title {
     font-family: myFirstFont;
     src: url(https://www.dafont.com/pt/canon.font);
-    font-size: 90px;
+    font-size: 75px;
     margin-top: -20px;
     text-align: center;
 }
