@@ -9,13 +9,6 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-.tab.infos{
-    color: whitesmoke;
-    text-align: center;
-    font-family: Verdana;
-    border-right: 100px;
-}
-
 .infoicon{
         position: left;
         width: 45px;
@@ -50,13 +43,14 @@ body{
     grid-template-areas: "header header"
                          "aside tabs"  ;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 60px auto;
 
 }
 
+/* HEADER */
 .header1{
 
-    height: 50px;
+    height: 60px;
     background-color: rgb(43, 72, 73);
     grid-area: header;
 
@@ -64,37 +58,25 @@ body{
 
 .icon {
     position: absolute;
-    width: 45px;
-    margin-top: 2.5px;
-    margin-left: 5px;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 15px;
 }
 
 .title {
-    margin-left: 58px;
-    margin-top: 6px;
+    font-size: 35px;
+    margin-left: 75px;
+    margin-top: 8px;
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
+/* BOTOES E TABS PRINCIPAIS */
 
 .aside1{
 
     height: 100%;
     background-color: gray;
     grid-area: aside;
-
-}
-
-.tabs{
-
-    width: 100%;
-    height: 100%;
-    grid-area: tabs;
-
-}
-
-.tab{
-
-    width: 100%;
-    height: 100%;
 
 }
 
@@ -109,6 +91,54 @@ body{
     text-align: center;
     padding-left: 50px;
 }
+
+.fa{
+    font-size:30px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tabs{
+
+    width: 100%;
+    height: 100%;
+    grid-area: tabs;
+
+}
+
+.tab{
+    width: 100%;
+    height: 100%;
+
+}
+
+.tab.infos{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Verdana;
+    border-right: 100px;
+}
+
+
+/* DIVS DE FORMATACAO */
+
+.centralize {
+    height: 100%;
+    width: 20%;
+}
+
+#centraLeft {
+    float: left;
+}
+
+#centraRight {
+    float: right;
+}
+
+
+/* TABS DAS CONFIGS */
 
 .tab.configuracoes {
     width: 100%;
@@ -143,6 +173,8 @@ body{
     display: none;
 }
 
+/* TABS DAS STATS */
+
 .tab.estatisticas {
     width: 100%;
     height: 100%;
@@ -176,6 +208,8 @@ body{
     display: none;
 }
 
+/* FORMATACAO DAS CONFIGS */
+
 .opbutton:hover {
     background-color: rgb(65, 65, 65);
     color: white;
@@ -200,19 +234,88 @@ body{
     margin-bottom: 50px;
 }
 
+.selectList {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.aplicar {
+    width: 100px;
+    font-style: bold;
+    font-size: 16px;
+    color: #43b480;
+}
+
+/* SWITCHS DAS CONFIGS */
+
 .switch {
     float: right;
     margin-right: 55%;
 }
 
-.fa{
-    font-size:30px;
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    transform: translateY(-50%);
-
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
 }
+
+.switch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+/* MODO MOBILE */
 
 }
 @media only screen and (max-width: 600px) {

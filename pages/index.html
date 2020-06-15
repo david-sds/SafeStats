@@ -58,8 +58,9 @@
                 <div class="opconfigs">
                     <h3 class="configSubTitle">CONFIGURAÇÕES GERAIS</h3>
                     <ul class="configList">
-                        <li>IDIOMA<br>
-                            <select class="selectLista">
+                        <li> IDIOMA: <br>
+                            <select class="selectList">
+                                <option value="PT">Português</option>
                                 <option value="AF">Afrikaans</option>
                                 <option value="SQ">Albanian</option>
                                 <option value="AR">Arabic</option>
@@ -107,7 +108,6 @@
                                 <option value="NO">Norwegian</option>
                                 <option value="FA">Persian</option>
                                 <option value="PL">Polish</option>
-                                <option value="PT">Portuguese</option>
                                 <option value="PA">Punjabi</option>
                                 <option value="QU">Quechua</option>
                                 <option value="RO">Romanian</option>
@@ -134,29 +134,32 @@
                                 <option value="XH">Xhosa</option>
                             </select>
                         </li>
-                        <li>ACESSIBILIDADE
+                        <li>ACESSIBILIDADE:
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
-                        <li>NOTIFICAÇÕES
+                        <li>NOTIFICAÇÕES:
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
-                        <li>DICAS
+                        <li>DICAS:
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
-                        <li>DARK MODE
+                        <li>DARK MODE:
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
+                        </li>
+                        <li class="aplicar">
+                            <button>APLICAR</button>
                         </li>
                     </ul>
                 </div>
@@ -164,8 +167,9 @@
                 <div class="opconfigs">
                     <h3 class="configSubTitle">CONFIGURAÇÕES DO MAPA</h3>
                     <ul class="configList">
-                        <li>LOCALIZAÇÃO:<br>
-                            <select name="estado" class="selectLista">
+                        <li>LOCALIZAÇÃO: <br>
+                            <select  name="estado" class="selectList">
+                                <option>Paraná (PR)</option>
                                 <option>Acre (AC)</option>
                                 <option>Alagoas (AL)</option>
                                 <option>Amapá (AP)</option>
@@ -181,7 +185,6 @@
                                 <option>Minas Gerais (MG)</option>
                                 <option>Pará (PA)</option>
                                 <option>Paraíba (PB)</option>
-                                <option>Paraná (PR)</option>
                                 <option>Pernambuco (PE)</option>
                                 <option>Piauí (PI)</option>
                                 <option>Rio de Janeiro (RJ)</option>
@@ -196,14 +199,16 @@
                             </select>
                         </li>
                         <li>
-                            <form action="/action_page.php">
+                            <form action="/action_page.php" >
                                 <label for="vol">RAIO DO MAPA: 1-100km² </label> <br>
                                 <input type="range" id="vol" name="vol" min="1" max="100">
-                                <input type="submit">
                             </form>
                         </li>
-                        <li>HISTÓRICO<br>
-                            <button>Deletar Histórico</button>
+                        <li>HISTÓRICO:<br>
+                            <button class="selectList">Deletar Histórico</button>
+                        </li>
+                        <li class="aplicar">
+                            <button>APLICAR</button>
                         </li>
                     </ul>
                 </div>
@@ -211,9 +216,12 @@
                 <div class="opconfigs">
                     <h3 class="configSubTitle">CONFIGURAÇÕES AVANÇADAS</h3>
                     <ul class="configList">
-                        <li>CONTAS</li>
-                        <li>ATUALIZAÇÃO</li>
-                        <li>PRIVACIDADE</li>
+                        <li>CONTAS:</li>
+                        <li>ATUALIZAÇÃO:</li>
+                        <li>PRIVACIDADE:</li>
+                        <li class="aplicar">
+                            <button>APLICAR</button>
+                        </li>
                     </ul>
                 </div>
 
@@ -221,6 +229,8 @@
 
             <div class="tab infos">
                 <h1><img class="infoicon" src="../img/safestats-logo.png" alt="icon">SafeStats</h1>
+                <div class="centralize" id="centraLeft"></div>
+                <div class="centralize" id="centraRight"></div>
                 <p class="pinfo1">
                           ► O aplicativo SafeStats foi desenvolvido por um grupo de estudantes do primeiro período do
                     curso Bacharelado em Sistemas de Informação na Pontíficia Católica do Paraná (PUCPR) no intuito de
