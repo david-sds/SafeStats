@@ -181,13 +181,29 @@ body{
     color: white;
   }
 
+
+.configSubTitle {
+    color: black;
+    margin-bottom: 100px;
+}
+
 .configList {
+    list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
     margin-left: 10px;
     color: black;
+
 }
 
+.configList li {
+    margin-bottom: 50px;
+}
+
+.switch {
+    float: right;
+    margin-right: 55%;
+}
 
 .fa{
     font-size:30px;
