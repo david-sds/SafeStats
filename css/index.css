@@ -64,11 +64,13 @@ body{
 }
 
 .title {
-    font-size: 45px;
+    font-size: 30px;
+    color: rgb(5, 5, 5);
     margin-left: 75px;
-    margin-top: 8px;
-    font-family: myFirstFont;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif; color: white;
     src: url(https://www.dafont.com/pt/canon.font);
+    -webkit-text-stroke: 1px black;
 }
 
 /* BOTOES E TABS PRINCIPAIS */
@@ -164,7 +166,7 @@ body{
 
 .tab.configuracoes .opconfigs {
     height: 100%;
-    background-color: gray;
+    background-color: rgb(36, 36, 36);
     color: white;
     text-align: center;
     padding-top: 105px;
@@ -199,7 +201,7 @@ body{
 
 .tab.estatisticas .statconfigs {
     height: 100%;
-    background-color: gray;
+    background-color: rgb(36, 36, 36);
     color: white;
     text-align: center;
     padding-top: 105px;
@@ -218,7 +220,7 @@ body{
 
 
 .configSubTitle {
-    color: black;
+    color: white;
     margin-bottom: 100px;
 }
 
@@ -227,7 +229,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
     margin-left: 10px;
-    color: black;
+    color: white;
 
 }
 
