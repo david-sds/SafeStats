@@ -62,6 +62,7 @@ statTabs[panelIndex].style.display="block";
 
 statPanel(0);
 
+
 function initMap(){
     
     var mapOptions = {

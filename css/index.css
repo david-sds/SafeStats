@@ -9,14 +9,26 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+.infoHeading {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.infoTitle {
+    display: inline-block;
+    margin-left: 70px;
+}
+
 .infoicon{
-        position: left;
-        width: 45px;
-        transform: translateX(-20%);
+    position: absolute;
+    margin-top: 5px;
+    width: 60px;
 }
 
 .pinfo1{
     text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -48,12 +60,12 @@ body{
 }
 
 /* HEADER */
-.header1{
 
+.header1{
     height: 60px;
     background-color: rgb(43, 72, 73);
     grid-area: header;
-
+    display: inline-block;
 }
 
 .icon {
@@ -64,11 +76,21 @@ body{
 }
 
 .title {
-    font-size: 32px;
+    font-size: 25px;
     margin-left: 78px;
     margin-top: 18px;
-    font-family: myFirstFont;
-    src: url(https://www.dafont.com/pt/canon.font);
+    margin-right: 0;
+    text-shadow: 0 2px 2px #666;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+    font-family: Verdana;
+    color: white;
+    
+}
+
+#username1 {
+    text-align: right;
+    color: tomato;
 }
 
 /* BOTOES E TABS PRINCIPAIS */
@@ -91,6 +113,8 @@ body{
     font-size: 17px;
     text-align: center;
     padding-left: 50px;
+    outline: 0;
+    cursor: pointer;
 }
 
 .fa{
@@ -127,7 +151,7 @@ body{
 
 .centralize {
     height: 100%;
-    width: 15%;
+    width: 20%;
 }
 
 #centraLeft {
@@ -152,9 +176,12 @@ body{
     background-color: rgb(78, 78, 78);
     font-size: 15px;
     color: white;
-    border: 2px solid rgb(43, 72, 73);
+    border: 1px solid rgb(43, 72, 73);
     margin-left: 0px;
-    margin-right: 0px; 
+    margin-right: 0px;
+    cursor: pointer;
+    outline: 0;
+    
 }
 
 .tab.configuracoes .configbuttons button:hover {
@@ -190,6 +217,8 @@ body{
     border: 2px solid rgb(43, 72, 73);
     margin-left: 0px;
     margin-right: 0px; 
+    cursor: pointer;
+    outline: 0;
 }
 
 .tab.estatisticas .statbuttons button:hover {
@@ -225,7 +254,7 @@ body{
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 25%;
     color: white;
 
 }

@@ -31,11 +31,13 @@ input {
 }
 
 .title {
-    font-family: myFirstFont;
-    src: url(https://www.dafont.com/pt/canon.font);
     font-size: 75px;
     margin-top: -20px;
     text-align: center;
+    text-shadow: 0 4px 2px #666;
+    -webkit-text-stroke-color: #000;
+    font-family: Verdana;
+    color: white;
 }
 
 .icon {
