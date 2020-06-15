@@ -2,6 +2,8 @@ var botoes = document.querySelectorAll(".desktop .aside1 .tabutton");
 var tabs = document.querySelectorAll(".desktop .tab");
 var configButtons=document.querySelectorAll(".tab.configuracoes .configbuttons button")
 var configTabs=document.querySelectorAll(".tab.configuracoes .opconfigs")
+var statButtons=document.querySelectorAll(".tab.estatisticas .statbuttons button")
+var statTabs=document.querySelectorAll(".tab.estatisticas .statconfigs")
 var map;
 
 function showPanel(panelIndex){
@@ -23,7 +25,7 @@ function showPanel(panelIndex){
 
 showPanel(0);
 
-function showOPanel(panelIndex) {
+function configPanel(panelIndex) {
   configButtons.forEach(function(node) {
     node.style.backgroundColor="rgb(78, 78, 78)";
     node.style.color="";
@@ -39,7 +41,26 @@ configTabs[panelIndex].style.display="block";
 
 }
 
-showOPanel(0);
+configPanel(0);
+
+
+function statPanel(panelIndex) {
+  statButtons.forEach(function(node) {
+    node.style.backgroundColor="rgb(78, 78, 78)";
+    node.style.color="";
+  })
+  statTabs.forEach(function(node){
+
+    node.style.display="none";
+
+});
+
+statButtons[panelIndex].style.backgroundColor="rgb(100, 100, 100)";
+statTabs[panelIndex].style.display="block";
+
+}
+
+statPanel(0);
 
 function initMap(){
     

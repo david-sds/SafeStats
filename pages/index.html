@@ -33,13 +33,25 @@
             <div class="tab" id="mapa">
 
             </div>
-            <div class="tab estatisticas"></div>
+            <div class="tab estatisticas">
+
+                <div class="statbuttons">
+                    <button onclick="statPanel(0)" class="statbutton">Atendimento</button>
+                    <button onclick="statPanel(1)" class="statbutton">Equipamentos</button>
+                </div>
+
+
+                <div class="statconfigs">Atendimento</div>
+                <div class="statconfigs">Equipamentos</div>
+
+                
+            </div>
             <div class="tab configuracoes">
 
                 <div class="configbuttons">
-                    <button onclick="showOPanel(0)" class="opbutton">Geral</button>
-                    <button onclick="showOPanel(1)" class="opbutton">Mapa</button>
-                    <button onclick="showOPanel(2)" class="opbutton">Avançado</button>
+                    <button onclick="configPanel(0)" class="opbutton">Geral</button>
+                    <button onclick="configPanel(1)" class="opbutton">Mapa</button>
+                    <button onclick="configPanel(2)" class="opbutton">Avançado</button>
                 </div>
 
                 <div class="opconfigs">Config Geral</div>
