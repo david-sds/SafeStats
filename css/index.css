@@ -9,6 +9,23 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+.tab.infos{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Verdana;
+    border-right: 100px;
+}
+
+.infoicon{
+        position: left;
+        width: 45px;
+        transform: translateX(-20%);
+}
+
+.pinfo1{
+    text-align: justify;
+}
+
 @media only screen and (min-width: 600px) {
 
 body{
@@ -164,6 +181,13 @@ body{
     color: white;
   }
 
+.configList {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    color: black;
+}
+
 
 .fa{
     font-size:30px;
@@ -189,7 +213,6 @@ body{
     height: 100vh;
 
 }
-
 
 .logo{
 
