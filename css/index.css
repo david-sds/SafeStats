@@ -127,7 +127,7 @@ body{
 
 .centralize {
     height: 100%;
-    width: 20%;
+    width: 15%;
 }
 
 #centraLeft {
@@ -137,7 +137,6 @@ body{
 #centraRight {
     float: right;
 }
-
 
 /* TABS DAS CONFIGS */
 
@@ -239,15 +238,17 @@ body{
     display: inline-block;
     margin-top: 15px;
     margin-left: 10px;
-    padding: 2px;
+    padding: 5px;
     font-weight: bold;
+
 }
 
 .aplicar {
     width: 100px;
     font-style: bold;
     font-size: 16px;
-    color: #43b480;
+    font-weight: bold;
+    padding: 5px;
 }
 
 /* SWITCHS DAS CONFIGS */
@@ -295,11 +296,11 @@ transition: .4s;
 }
 
 input:checked + .slider {
-background-color: #2196F3;
+background-color: #43b480;
 }
 
 input:focus + .slider {
-box-shadow: 0 0 1px #2196F3;
+box-shadow: 0 0 1px #43b480;
 }
 
 input:checked + .slider:before {
