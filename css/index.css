@@ -346,6 +346,22 @@ border-radius: 34px;
 border-radius: 50%;
 }
 
+/* ABA FEEDBACK */
+.formFeedback {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.formFeedback h3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.textFeedback {
+    padding: 6px;
+}
+
 /* MODO MOBILE */
 
 }
