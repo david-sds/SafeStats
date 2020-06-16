@@ -51,7 +51,7 @@
                     <img src="../img/equipgrafico.png" alt="equipgrafico">
                 </div>
 
-                
+
             </div>
             <div class="tab configuracoes">
 
@@ -174,7 +174,7 @@
                     <h3 class="configSubTitle">CONFIGURAÇÕES DO MAPA</h3>
                     <ul class="configList">
                         <li>LOCALIZAÇÃO: <br>
-                            <select  name="estado" class="selectList">
+                            <select name="estado" class="selectList">
                                 <option>Paraná (PR)</option>
                                 <option>Acre (AC)</option>
                                 <option>Alagoas (AL)</option>
@@ -205,7 +205,7 @@
                             </select>
                         </li>
                         <li>
-                            <form action="/action_page.php" >
+                            <form action="/action_page.php">
                                 <label for="vol">RAIO DO MAPA: 1-100km² </label> <br>
                                 <input type="range" id="vol" name="vol" min="1" max="100">
                             </form>
@@ -269,7 +269,16 @@
                 </p>
             </div>
 
-            <div class="tab feedback"></div>
+            <div class="tab feedback">
+                <form class="formFeedback">
+                    <h3>Nome: </h3>
+                    <textarea class="textFeedback" name="Nome" placeholder="e.g. Bruno Bergamini" cols="50" rows="1"></textarea>
+                    <h3>Email: </h3>
+                    <textarea class="textFeedback" name="Email" placeholder="e.g. bruno.bergamini@gmail.com" cols="50" rows="1"></textarea><br>
+                    <h3>Texto: </h3>
+                    <textarea class="textFeedback" name="Texto" placeholder="e.g. site feio" cols="100" rows="30"></textarea>
+                </form>
+            </div>
         </div>
 
         <script src="../js/index.js"></script>
